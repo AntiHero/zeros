@@ -1,3 +1,4 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
+
+    return (number / 5 < 1 ? 0 : Math.trunc(number / 5) + getZerosCount(Math.floor(number / 5)));
 }
